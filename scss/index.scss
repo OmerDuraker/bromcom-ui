@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+// Colors 
+
+$primary: #4293CF;
+$hover: #65A8D9;
+$pressed: #3679AB;
+
+// Font
+
+$Roboto: 'Roboto', sans-serif;
+
+$regular: 400;
+$semibold: 500;
+
+* {
+    font-family: $Roboto;
+    box-sizing: border-box;
+    margin: 0;
+}

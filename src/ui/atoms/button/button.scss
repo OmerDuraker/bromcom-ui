@@ -1,0 +1,96 @@
+@import '../../../../scss/index.scss';
+
+button {
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: $semibold;
+    font-family: $Roboto;
+
+    &:disabled {
+        border-color: #D9D9D9;
+        background-color: #F5F5F5;
+        color: #BFBFBF;
+        pointer-events: none;
+    }
+}
+
+.primary {
+    background-color: $primary;
+    border: 1px solid $primary;
+
+    &:hover, &:focus {
+        background-color: $hover;
+        border-color: $hover;
+    }
+    
+    &:active {
+        background-color: $pressed;
+        border-color: $pressed;
+    }
+
+    &.outline {
+        border: 1px solid #D9D9D9;
+        background-color: #fff;
+        color: #595959;
+        
+        &:hover, &:focus {
+            border-color: $hover;
+            color: $hover;
+        }
+
+        &:active {
+            border-color: $pressed;
+            color: $pressed;
+        }
+    }
+
+    &.rounded {
+        border-radius: 50px;
+    }
+
+    span {
+        display: inherit;
+        &.left {
+            margin-right: 4px;
+        }
+        &.right {
+            margin-left: 4px;
+        }
+    }
+}
+
+.large {
+    font-size: 16px;
+    padding: 7px 16px;
+    line-height: 24px;
+    
+    &.rounded {
+        padding: 9px;
+    }
+}
+
+.medium {
+    font-size: 14px;
+    padding: 4px 16px;
+    line-height: 22px;
+
+    &.rounded {
+        padding: 6px;
+    }
+}
+
+.small {
+    font-size: 14px;
+    padding: 0 8px;
+    line-height: 22px;
+
+    &.rounded {
+        padding: 3px;
+    }
+}
