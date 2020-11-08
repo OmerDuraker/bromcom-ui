@@ -77,4 +77,4 @@ class Button extends LitElement {
     }
 }
 
-customElements.define('br-btn', Button)
+customElements.define('bcm-btn', Button)
