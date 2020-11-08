@@ -77,4 +77,8 @@ class Button extends LitElement {
     }
 }
 
+<<<<<<< Updated upstream
 customElements.define('bcm-btn', Button)
+=======
+customElements.define('bcm-button', Button)
+>>>>>>> Stashed changes
